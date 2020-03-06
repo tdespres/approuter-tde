@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "source": "/",
+      "target": "/sap/opu/odata/sap/EPM_REF_APPS_PROD_MAN_SRV/Products",
+      "destination": "ES5"
+    }
+  ]
+}
