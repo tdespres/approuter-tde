@@ -23,4 +23,13 @@ Inspired from [SAP Tutorial](https://developers.sap.com/tutorials/cp-connectivit
       ]
     }
   ]
-}```
+}
+```
+
+## Create zip file
+```
+  foreach ($file in @("xs-app.json",".npmrc", "package.json")){
+ if (-not (Test-Path $file)) { Write-Warning "$file does not exist" }
+  }
+  Compress-Archive -Force -Path .\* -DestinationPath approuter.zip
+```
